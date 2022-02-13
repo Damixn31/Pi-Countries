@@ -1,10 +1,20 @@
 import './App.css';
+import {Fragment} from 'react'
+import Routes from './components/rootRoutes/rootRoutes'; 
+import {BrowserRouter} from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Henry Countries</h1>
-    </div>
+    <Fragment>
+      <BrowserRouter>
+    
+          <Routes />
+
+        </BrowserRouter> 
+     
+    </Fragment>
+
   );
 }
 
